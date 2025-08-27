@@ -81,8 +81,6 @@ export function AuthProvider(props) {
         //console.log(firebaseData)
         let firebaseData = {subscriptions: []} //default data for new user
 
-        console.log(firebaseData)
-
         if(docSnap.exists()) {
           firebaseData = docSnap.data()
         } 
