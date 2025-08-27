@@ -8,7 +8,7 @@ export default function SubscriptionsDisplay({handleShowInput, handleEditSubscri
     <section>
       <h2>Your Subscriptions</h2>
       <div className="card-container">
-        {userData.subscriptions.map((sub, subIndex) => {
+        {userData?.subscriptions.map((sub, subIndex) => {
           const { name, category, cost, currency, billingFrequency, startDate, notes, status } = sub
           return (
             <div key={subIndex} className="card subscription-card">
