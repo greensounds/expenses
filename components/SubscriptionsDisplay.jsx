@@ -3,7 +3,7 @@ import { getDaysUntilNextCharge, subscriptions } from "@/utils";
 
 export default function SubscriptionsDisplay({handleShowInput, handleEditSubscription}) {
   const { handleDeleteSubscription, userData } = useAuth()
-  if(!userData?.subscriptions) return null
+  if (!userData?.subscriptions) { return null }
   return (
     <section>
       <h2>Your Subscriptions</h2>
