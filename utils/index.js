@@ -1,4 +1,4 @@
-export const calculateSubscriptionMetrics = (subscriptions) => {
+export const calculateSubscriptionMetrics = (subscriptions = []) => {
     // Filter active subscriptions
     const active_subscriptions = subscriptions.filter(sub => sub.status === "Active");
 
