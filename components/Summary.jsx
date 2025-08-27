@@ -3,7 +3,7 @@ import { calculateSubscriptionMetrics, subscriptions } from "@/utils"
 
 export default function Summary() {
   const { userData } = useAuth()
-  const summary = calculateSubscriptionMetrics(userData.subscriptions);
+  const summary = calculateSubscriptionMetrics(userData?.subscriptions);
   const emojis = ['🔥', '✅', '⭐️', '⚡️', '🎉', '✨', '🏆', '🌼', '🌱', '🐛', '🐙', '🪼']
   return (
     <section>
