@@ -81,14 +81,13 @@ export function AuthProvider(props) {
         //console.log(firebaseData)
         let firebaseData = {subscriptions: []} //default data for new user
 
-        if(docSnap.exists) {
-          console.log('find data')
+        console.log(firebaseData)
+
+        if(docSnap.exists()) {
           firebaseData = docSnap.data()
         } 
 
         setUserData(firebaseData)
-        console.log('aca')
-        console.log(userData, firebaseData)
         setLoading(false)
       } catch (error) {
         console.log(error.message)
